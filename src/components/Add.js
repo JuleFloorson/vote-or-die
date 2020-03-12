@@ -9,7 +9,7 @@ function Add() {
   const [answerOne, setAnswerOne] = React.useState("");
   const [answerTwo, setAnswerTwo] = React.useState("");
   const [answerThree, setAnswerThree] = React.useState("");
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     const poll = {
       question: question,
@@ -17,7 +17,15 @@ function Add() {
       answerTwo: answerTwo,
       answerThree: answerThree
     };
-    alert(JSON.stringify(poll));
+    const response = await fetch("http://localhost:4000/polls", {
+      method: "POST",
+      headers: {
+        "Content-type": "applications/json"
+      },
+      body: JSON.stringify(poll)
+    });
+    const createPoll = await response.json();
+    alert(`Creates poll with the id ${createPoll.id}`);
   }
   return (
     <Card>
