@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <main>
+        <main className="main">
           <div>
             <Switch>
               <Route path="/Vote">
@@ -22,7 +22,7 @@ function App() {
               <Route path="/Result">
                 <Result />
               </Route>
-              <Route path="/Add">
+              <Route path="/">
                 <Add />
               </Route>
             </Switch>
