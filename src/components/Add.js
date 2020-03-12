@@ -9,6 +9,7 @@ function Add() {
   const [answerOne, setAnswerOne] = React.useState("");
   const [answerTwo, setAnswerTwo] = React.useState("");
   const [answerThree, setAnswerThree] = React.useState("");
+
   async function handleSubmit(event) {
     event.preventDefault();
     const poll = {
@@ -17,10 +18,10 @@ function Add() {
       answerTwo: answerTwo,
       answerThree: answerThree
     };
-    const response = await fetch("http://localhost:4000/polls", {
+    const response = await fetch(process.env.REACT_APP_POLLS_API, {
       method: "POST",
       headers: {
-        "Content-type": "applications/json"
+        "Content-type": "application/json"
       },
       body: JSON.stringify(poll)
     });
