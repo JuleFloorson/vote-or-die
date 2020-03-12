@@ -1,0 +1,18 @@
+{
+  "polls": [
+    {
+      "id": 1,
+      "question": "What should we do?",
+      "answerOne": "Sleep",
+      "answerTwo": "Train",
+      "answerThree": "Eat"
+    },
+    {
+      "id": 2,
+      "question": "Are you stupid?",
+      "answerOne": "Yes",
+      "answerTwo": "No",
+      "answerThree": "Maybe"
+    }
+  ]
+}
