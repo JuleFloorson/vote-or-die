@@ -1,7 +1,7 @@
 import React from "react";
 import "./Add.css";
 import Card from "./Card";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import circleImage from "./circle.png";
 
 function Add() {
@@ -32,7 +32,7 @@ function Add() {
           }}
         />
         <div className="answerLine">
-          <img src={circleImage} alt="circle" class="circle" />
+          <img src={circleImage} alt="circle" className="circle" />
           <input
             className="formAnswer"
             type="text"
@@ -44,7 +44,7 @@ function Add() {
           />
         </div>
         <div className="answerLine">
-          <img src={circleImage} alt="circle" class="circle" />
+          <img src={circleImage} alt="circle" className="circle" />
           <input
             className="formAnswer"
             type="text"
@@ -56,7 +56,7 @@ function Add() {
           />
         </div>
         <div className="answerLine">
-          <img src={circleImage} alt="circle" class="circle" />
+          <img src={circleImage} alt="circle" className="circle" />
           <input
             className="formAnswer"
             type="text"
