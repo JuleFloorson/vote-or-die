@@ -18,13 +18,17 @@ function Add() {
       answerTwo: answerTwo,
       answerThree: answerThree
     };
-    const response = await fetch(process.env.REACT_APP_POLLS_API, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json"
-      },
-      body: JSON.stringify(poll)
-    });
+    const response = await fetch(
+      process.env.REACT_APP_POLLS_API ||
+        "https://my-json-server.typicode.com/JuleFloorson/vote-or-die/polls",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json"
+        },
+        body: JSON.stringify(poll)
+      }
+    );
     const createPoll = await response.json();
     alert(`Creates poll with the id ${createPoll.id}`);
   }
