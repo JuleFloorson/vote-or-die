@@ -6,6 +6,7 @@ import Add from "./components/Add";
 import Result from "./components/Result";
 import Vote from "./components/Vote";
 import styled from "@emotion/styled";
+import GlobalStyles from "./components/GlobalStyles";
 
 const Main = styled.main`
   display: flex;
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Router>
+        <GlobalStyles />
         <AppHeader />
         <Main>
           <Switch>
