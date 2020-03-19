@@ -8,11 +8,32 @@
       "answerThree": "Eat"
     },
     {
-      "id": 2,
-      "question": "Are you stupid?",
-      "answerOne": "Yes",
-      "answerTwo": "No",
-      "answerThree": "Maybe"
+      "question": "How are you ?",
+      "answerOne": "Fine",
+      "answerTwo": "Good",
+      "answerThree": "Okay",
+      "id": 2
+    },
+    {
+      "question": "Which music do you hear?",
+      "answerOne": "Rock",
+      "answerTwo": "Pop",
+      "answerThree": "Everything",
+      "id": 3
+    },
+    {
+      "question": "What is your favourite pokemon?",
+      "answerOne": "Pikachu",
+      "answerTwo": "Schiggi",
+      "answerThree": "Glumanda",
+      "id": 4
+    },
+    {
+      "question": "What is your favourite sport?",
+      "answerOne": "Soccer",
+      "answerTwo": "Golf",
+      "answerThree": "Triathlon",
+      "id": 5
     }
   ]
 }
