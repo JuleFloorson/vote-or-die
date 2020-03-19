@@ -18,7 +18,7 @@ function Vote() {
     }
     getPoll();
   }, [pollId]);
-
+  console.log(poll);
   return (
     <div>
       <h2>{poll?.question}</h2>
@@ -35,7 +35,7 @@ function Vote() {
         {poll?.answerThree}
       </label>
       Vote
-      <Link to="/Result">Result</Link>
+      <Link to="/Result"></Link>
     </div>
   );
 }
