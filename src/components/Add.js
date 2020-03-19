@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import AppCard from "./AppCard";
 // import { Link } from "react-router-dom";
 import circleImage from "./circle.png";
 import styled from "@emotion/styled";
@@ -77,7 +77,7 @@ function Add() {
   }
 
   return (
-    <Card>
+    <AppCard>
       <Form onSubmit={handleSubmit}>
         <FormQuestion
           type="text"
@@ -127,7 +127,7 @@ function Add() {
           {/* <Link to="/Vote"></Link> */}
         </FormButton>
       </Form>
-    </Card>
+    </AppCard>
   );
 }
 export default Add;

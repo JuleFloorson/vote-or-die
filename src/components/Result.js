@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import AppCard from "./AppCard";
 import { useParams } from "react-router-dom";
 
 const pollApiUrl =
@@ -19,12 +19,12 @@ function Result() {
   }, [pollId]);
 
   return (
-    <Card>
+    <AppCard>
       <h2>{poll?.question}</h2>
       <div>{poll?.answerOne}</div>
       <div>{poll?.answerTwo}</div>
       <div>{poll?.answerThree} </div>
-    </Card>
+    </AppCard>
   );
 }
 export default Result;
