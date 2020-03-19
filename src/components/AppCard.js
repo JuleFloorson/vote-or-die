@@ -11,6 +11,6 @@ const Card = styled.div`
 `;
 
 function AppCard(props) {
-  return <Card className="card">{props.children} </Card>;
+  return <Card>{props.children} </Card>;
 }
 export default AppCard;
