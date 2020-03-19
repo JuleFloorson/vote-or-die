@@ -16,10 +16,10 @@ function App() {
         <main className="main">
           <div>
             <Switch>
-              <Route path="/Vote">
+              <Route path="/vote/:pollId">
                 <Vote />
               </Route>
-              <Route path="/Result">
+              <Route path="/polls/:pollId">
                 <Result />
               </Route>
               <Route path="/">
